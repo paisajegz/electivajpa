@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <!-- Define Persistence Unit -->
+  <persistence-unit name="persistencia_electiva">
+    <class>com.electiva.factura.electivajpa.entidades.Cliente</class>
+    <class>com.electiva.factura.electivajpa.entidades.Vendedor</class>
+    <class>com.electiva.factura.electivajpa.entidades.Factura</class>
+    <class>com.electiva.factura.electivajpa.entidades.Productos</class>
+    <class>com.electiva.factura.electivajpa.entidades.ProductosFacturas</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/profundizacion"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="eclipselink.logging.level" value="FINE"/>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+</persistence>
